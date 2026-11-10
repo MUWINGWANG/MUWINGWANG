@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="250" viewBox="0 0 360 250">
+  <style>
+    .title { font: 600 22px 'Segoe UI', Ubuntu, sans-serif; fill: #58a6ff; }
+    .label { font: 400 15px 'Segoe UI', Ubuntu, sans-serif; fill: #8b949e; }
+    .value { font: 600 15px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; text-anchor: end; }
+  </style>
+  <rect x="0.5" y="0.5" rx="6" width="359" height="249" fill="#0d1117" stroke="#30363d"/>
+  <text x="30" y="42" class="title">Stats</text>
+  <text x="30" y="80" class="label">Contributions (last year)</text><text x="310" y="80" class="value">669</text>
+  <text x="30" y="110" class="label">Total Commits</text><text x="310" y="110" class="value">544</text>
+  <text x="30" y="140" class="label">Total PRs</text><text x="310" y="140" class="value">103</text>
+  <text x="30" y="170" class="label">Total Issues</text><text x="310" y="170" class="value">0</text>
+  <text x="30" y="200" class="label">Total Stars</text><text x="310" y="200" class="value">0</text>
+  <text x="30" y="230" class="label">Contributed to</text><text x="310" y="230" class="value">23</text>
+</svg>

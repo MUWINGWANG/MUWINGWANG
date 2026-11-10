@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img height="170" src="./profile-summary-card-output/github_dark/3-stats.svg" alt="stats" />
+  <img height="170" src="./stats/stats.svg" alt="stats" />
   <img height="170" src="./profile-summary-card-output/github_dark/4-productive-time.svg" alt="productive time" />
 </p>
 

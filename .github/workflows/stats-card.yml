@@ -1,0 +1,42 @@
+name: stats card
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/stats-card.yml
+      - scripts/stats_card.py
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      # Without STATS_TOKEN only public activity is visible, so keep the last card instead of overwriting it.
+      - name: Generate card
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::STATS_TOKEN is not set; skipping."
+            exit 0
+          fi
+          python3 scripts/stats_card.py stats/stats.svg
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats/stats.svg
+          git diff --cached --quiet || git commit -m "Update stats card"
+          git pull --rebase
+          git push
