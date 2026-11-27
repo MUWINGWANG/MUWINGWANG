@@ -4,6 +4,11 @@
 - 🤖 Building AI tools and agents for fun and for research
 - 🐾 Side projects: desktop pets, workflows, and little experiments
 
+<p>
+  <a href="https://github.com/MUWINGWANG"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-MUWINGWANG-181717?logo=github&logoColor=white" /></a>
+  <a href="mailto:muwingwong@163.com"><img alt="Email" src="https://img.shields.io/badge/Email-muwingwong%40163.com-1e6050?logo=maildotru&logoColor=white" /></a>
+</p>
+
 <p align="center">
   <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" alt="profile details" />
 </p>
